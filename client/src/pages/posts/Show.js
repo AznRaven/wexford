@@ -86,7 +86,7 @@ function Show({ user }) {
                     }
                     
                     <div className="buttons">
-                        {post.user === user &&
+                        {(post.user === user || "admin") &&
                             <>
                                 <button onClick={handleDeletePost}>Delete</button>
                                 <Link to={`/posts/${post._id}/edit`}>

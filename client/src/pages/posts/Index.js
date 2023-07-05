@@ -46,7 +46,7 @@ function Index({ user }) {
               <th>Email</th>
               <th>Subject</th>
               <th>Date</th>
-              <th>Completed</th>
+              {/* <th>Completed</th> */}
             </tr>
           </thead>
           <tbody>
@@ -72,13 +72,13 @@ function Index({ user }) {
                     })}
                   </div>
                 </td>
-                <td>
+                {/* <td>
                   <input
                     type="checkbox"
                     checked={post.completed}
                     onChange={() => handleCompletionToggle(post._id)}
                   />
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
